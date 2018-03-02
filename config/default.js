@@ -143,6 +143,12 @@ module.exports = {
             url: 'http://localhost:12080/report-bounce'
         },
 
+        'core/queue-bounce': {
+            enabled: false, // 'main'
+            amqpServer: 'example.com',
+            queue: 'sampleQueue'
+        },
+
         // Calculate and log md5 hashes for all image/* and application/* attachments. Attachment info with the hash
         // is added to the envelope object, so you can also screen messages against some specific attachments.
         // This adds some CPU load as attachments need to be decoded and md5 hashes,
